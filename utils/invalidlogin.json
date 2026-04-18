@@ -1,0 +1,14 @@
+[
+    {
+        "username":"standarduser1",
+        "password":"secret_sauce"
+    },
+    {
+        "username":"standarduser",
+        "password":"secret_sauce1"
+    },
+     {
+        "username":"standarduser2",
+        "password":"secret_sauce1"
+    }
+]
