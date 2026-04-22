@@ -22,7 +22,7 @@ const Twoitems = require('../pages/purchase');
 test('Adding Phone and Monitor', async ({login,page }) => {
 
   const items = new Twoitems(page);
-  const user = { name: 'Sangeetha', country: 'UAE',city: 'Abu Dhabi',card: '1234567890',
+  const user = { name: 'Nisha', country: 'IND',city: 'Pta',card: '1234567890',
     month: '04',year: '2026'
   };
 
