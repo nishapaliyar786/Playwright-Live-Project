@@ -1,4 +1,4 @@
-class Logout {
+export class Logout {
 
   constructor(page) {
     this.page = page;
@@ -11,4 +11,3 @@ class Logout {
   }
 }
 
-module.exports = Logout;

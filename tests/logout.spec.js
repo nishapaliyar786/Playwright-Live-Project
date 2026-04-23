@@ -1,9 +1,12 @@
 //import { test, expect } from "playwright/test";//
 
-const {test}= require('@playwright/test');
-const data = require('../utils/validData.json');
-const Loginscenarios = require('../pages/loginPage');
-const Logout = require('../pages/logout');   
+import {test,expect} from "@playwright/test";
+ import { Login } from "../pages/login";
+ import{Logout} from "../pages/logout.js"
+ const data = JSON.parse((JSON.stringify(require('../utils/validlogin.json'))));
+
+
+ 
 
 test.beforeEach(async ({ page }) => {
   await page.goto("https://demoblaze.com/");
@@ -11,7 +14,7 @@ test.beforeEach(async ({ page }) => {
 
 test("Login with valid credentials", async ({ page }) => {
 
-  const loginobj = new Loginscenarios(page);
+  const loginobj = new Login(page);
   const logoutobj = new Logout(page);   
 
   await loginobj.clickLogin();

@@ -1,7 +1,7 @@
-import {test,expect} from "@playwright/test";
+import {expect} from "@playwright/test";
  import { AddCart } from "../pages/addToCart";
  import { Login } from "../pages/login";
- import {testbase} from "../utils/fixture"
+ import {test} from "../utils/fixture"
  import {data} from "../utils/validlogin.json"
 
  
@@ -10,7 +10,7 @@ import {test,expect} from "@playwright/test";
 //  })
  
  
- test('add to cart',async ({ testbase,page }) => {
+ test('add to cart',async ({ login,page }) => {
   
 //   const loginobj=new Login(page);
 //  await loginobj.clickLogin();

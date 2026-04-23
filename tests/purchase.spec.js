@@ -1,6 +1,6 @@
 //import { test, expect } from '@playwright/test';
+ import {test} from "../utils/fixture"
 
-const {test}= require('@playwright/test');
 
 const data = require('../utils/validlogin.json');
 const Loginscenarios = require('../pages/login');
